@@ -1,6 +1,8 @@
 
 const mongoose=require('mongoose');
 const validator=require('validator');
+
+//create a database model  with schema property
 const task=mongoose.model('task',{
     name:{
         type:String,
@@ -10,12 +12,7 @@ const task=mongoose.model('task',{
     password:{
         type:String,
         trim:true,
-        required:true,
-        validate(value)
-        {
-            if(value.length<6)
-                throw new Error('password must be greater than 6')
-        }
+        required:true
     },
     email:{
         type:String,

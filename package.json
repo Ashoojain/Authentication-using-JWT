@@ -2,7 +2,7 @@
   "name": "get_post_data",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "database__model.js",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
